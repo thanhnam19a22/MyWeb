@@ -31,6 +31,6 @@ Website gồm 4 trang chính:
 <img width="960" height="540" alt="du an" src="https://github.com/user-attachments/assets/e7b9f3d8-ae93-4be6-a6e3-f953d0036e3f" />
 <img width="960" height="540" alt="gioi thieu" src="https://github.com/user-attachments/assets/860624a1-c3c6-49e0-a788-cfcdbe0b74ca" />
 <img width="960" height="540" alt="lien he" src="https://github.com/user-attachments/assets/71e53846-4634-46da-b63a-84b6ffb8a259" />
-<img width="960" height="540" alt="trang chu" src="https://github.com/user-attachments/assets/3ac2a1d1-c6e4-4ec6-adad-e6d0b3dd590a" />
+<img width="215" height="472" alt="trang chu" src="https://github.com/user-attachments/assets/3cc6435a-5780-4f7b-83fe-e131e2355db3" />
 
                     
