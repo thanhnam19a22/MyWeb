@@ -30,6 +30,3 @@ Website gồm 4 trang chính:
 <img width="1293" height="680" alt="image" src="https://github.com/user-attachments/assets/f7f4b085-759d-4bd2-be81-6dd39f7ba45d" /> app:canva
 <img width="1226" height="791" alt="image" src="https://github.com/user-attachments/assets/e0f86ae7-4b11-4aaa-84f2-9b4edf55169a" /> app:canva
 <img width="1362" height="656" alt="image" src="https://github.com/user-attachments/assets/bc87d2d4-560b-4154-8beb-80a5e5cb5871" /> app:canva
-
-
-
