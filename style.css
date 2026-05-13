@@ -1,0 +1,200 @@
+/* style.css - Phiên bản Blue Theme cho Nguyễn Thanh Nam */
+:root {
+    --primary-blue: #0056b3;    /* Xanh dương đậm chủ đạo */
+    --light-blue: #e7f1ff;      /* Xanh nhạt cho nền */
+    --accent-blue: #00a8ff;     /* Xanh sáng làm điểm nhấn */
+    --dark-grey: #2c3e50;      /* Xám đậm cho chữ */
+    --white: #ffffff;
+    --transition: all 0.3s ease;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f4f7f9;
+    color: var(--dark-grey);
+    line-height: 1.6;
+}
+
+/* Header & Navigation */
+header {
+    background: var(--primary-blue);
+    padding: 15px 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    color: var(--white);
+    font-weight: 800;
+    font-size: 1.3rem;
+    border: 2px solid var(--white);
+    padding: 4px 12px;
+    text-transform: uppercase;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 25px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 0.95rem;
+    font-weight: 500;
+    transition: var(--transition);
+}
+
+nav ul li a:hover {
+    color: var(--accent-blue);
+}
+
+/* Main Container */
+.container {
+    width: 85%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 50px 20px;
+}
+
+h1.page-title {
+    text-align: center;
+    margin-bottom: 50px;
+    color: var(--primary-blue);
+    font-size: 2rem;
+    letter-spacing: 2px;
+    position: relative;
+    padding-bottom: 15px;
+}
+
+h1.page-title::after {
+    content: '';
+    width: 80px;
+    height: 4px;
+    background: var(--accent-blue);
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 2px;
+}
+
+/* Các khối nội dung (Hero, Intro, Form, v.v.) */
+.hero, .form-section, .project-card, .info-card {
+    background: var(--white);
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 86, 179, 0.08);
+    transition: var(--transition);
+}
+
+/* Phần Dự Án đặc biệt */
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.project-card {
+    padding: 20px;
+    border: 1px solid #e1e8ed;
+    text-align: center;
+}
+
+.project-card:hover {
+    transform: translateY(-10px); /* Hiệu ứng bay lên khi hover */
+    box-shadow: 0 15px 35px rgba(0, 86, 179, 0.15);
+    border-color: var(--accent-blue);
+}
+
+.project-img-placeholder {
+    width: 100%;
+    height: 180px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    transition: var(--transition);
+}
+
+/* Nút bấm (Buttons) */
+.btn-start, .btn-submit {
+    display: inline-block;
+    background: var(--primary-blue);
+    color: var(--white) !important;
+    padding: 12px 30px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.btn-start:hover, .btn-submit:hover {
+    background: var(--accent-blue);
+    box-shadow: 0 5px 15px rgba(0, 168, 255, 0.4);
+}
+
+/* Trang Giới thiệu (About Nam) */
+.avatar-circle {
+    width: 100px;
+    height: 100px;
+    border: 4px solid var(--light-blue);
+    background: var(--primary-blue);
+    margin: 0 auto 20px;
+    border-radius: 50%;
+}
+
+.list-items li {
+    list-style: none;
+    padding: 10px 0;
+    border-bottom: 1px solid #edf2f7;
+    font-size: 0.95rem;
+}
+
+.list-items li::before {
+    content: '✓';
+    color: var(--accent-blue);
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+/* Footer */
+footer {
+    background: #1a2a3a;
+    color: #a0aec0;
+    text-align: center;
+    padding: 40px 10%;
+    margin-top: 60px;
+}
+
+footer p {
+    font-size: 0.9rem;
+}
+
+/* Phân trang (Pagination) */
+.pagination .page-btn {
+    padding: 8px 16px;
+    border: 1px solid var(--light-blue);
+    margin: 0 4px;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.pagination .page-btn:hover {
+    background: var(--light-blue);
+    color: var(--primary-blue);
+}
