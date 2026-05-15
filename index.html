@@ -6,30 +6,30 @@
     <title>NGUYỄN THANH NAM | PROFESSIONAL PORTFOLIO 2026</title>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="CSS/style.css">
 </head>
 <body>
 
     <header>
         <nav class="container">
-            <div class="logo">🚀 NAM<span>TECH</span></div>
+            <div class="logo" onclick="showPage('home')" style="cursor:pointer">🚀 NAM<span>TECH</span></div>
             <ul class="nav-links">
-                <li><a href="#home">Trang Chủ</a></li>
-                <li><a href="#about">Giới Thiệu</a></li>
-                <li><a href="#projects">Dự Án</a></li>
-                <li><a href="#contact">Liên Hệ</a></li>
+                <li><a href="javascript:void(0)" onclick="showPage('home')">Trang Chủ</a></li>
+                <li><a href="javascript:void(0)" onclick="showPage('about')">Giới Thiệu</a></li>
+                <li><a href="javascript:void(0)" onclick="showPage('projects')">Dự Án</a></li>
+                <li><a href="javascript:void(0)" onclick="showPage('contact')">Liên Hệ</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section id="home" class="section-full">
+        <section id="home" class="section-full active">
             <div class="container hero-flex">
                 <div class="hero-text">
                     <span class="badge">Welcome to my world</span>
                     <h1>Nguyễn Thanh Nam</h1>
-                    <p>Sinh viên CNTT đam mê giải pháp công nghệ hiện đại và tối ưu hóa trải nghiệm người dùng.</p>
-                    <a href="#projects" class="btn-main">Khám phá dự án</a>
+                    <p>Sinh viên CNTT đam mê giải pháp công nghệ hiện đại.</p>
+                    <button class="btn-main" onclick="showPage('projects')">Khám phá dự án</button>
                 </div>
                 <div class="hero-img">
                     <img src="https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?auto=format&fit=crop&q=80&w=600" alt="Nam Portrait">
@@ -37,86 +37,65 @@
             </div>
         </section>
 
-        <section id="about" class="section-full bg-dark">
+        <section id="about" class="section-full bg-dark" style="display:none">
             <div class="container">
                 <h2 class="title">Giới Thiệu</h2>
                 <div class="about-content">
                     <div class="about-card-main">
-                        <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&q=80&w=800" alt="Tech Background">
+                        <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&q=80&w=800" alt="Tech">
                         <div class="overlay-text">
                             <h3>Hành trình phát triển</h3>
-                            <p>Tập trung vào phát triển kỹ năng tư duy logic và xây dựng nền tảng vững chắc trong ngành phần mềm.</p>
-                        </div>
-                    </div>
-                    <div class="skills-grid">
-                        <div class="skill-box">
-                            <i class="fas fa-code"></i>
-                            <h4>Lập trình</h4>
-                            <p>Sử dụng thành thạo Python, JavaScript, và React.</p>
-                        </div>
-                        <div class="skill-box">
-                            <i class="fas fa-paint-brush"></i>
-                            <h4>Thiết kế</h4>
-                            <p>Tối ưu giao diện mượt mà theo phong cách tối giản.</p>
+                            <p>Xây dựng nền tảng vững chắc trong ngành phần mềm.</p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="projects" class="section-full">
+        <section id="projects" class="section-full" style="display:none">
             <div class="container">
                 <h2 class="title">Dự Án Tiêu Biểu</h2>
                 <div class="project-grid">
                     <div class="project-card">
-                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=500" alt="Project 1">
-                        <div class="p-content">
-                            <h4>Hệ thống EdTech</h4>
-                            <div class="tags"><span>React</span><span>Python</span></div>
-                        </div>
-                    </div>
-                    <div class="project-card">
-                        <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&q=80&w=500" alt="Project 2">
-                        <div class="p-content">
-                            <h4>Web App Du lịch</h4>
-                            <div class="tags"><span>NextJS</span><span>SQL</span></div>
-                        </div>
-                    </div>
-                    <div class="project-card">
-                        <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&q=80&w=500" alt="Project 3">
-                        <div class="p-content">
-                            <h4>AI Chat-bot</h4>
-                            <div class="tags"><span>AI</span><span>Flask</span></div>
-                        </div>
+                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=500" alt="Project">
+                        <div class="p-content"><h4>Hệ thống EdTech</h4></div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="contact" class="section-full contact-bg">
+        <section id="contact" class="section-full contact-bg" style="display:none">
             <div class="container">
                 <h2 class="title white">Liên Hệ</h2>
                 <div class="contact-flex">
-                    <div class="contact-form-box">
-                        <form>
-                            <input type="text" placeholder="Tên của bạn">
-                            <input type="email" placeholder="Email liên hệ">
-                            <textarea rows="4" placeholder="Bạn đang nghĩ gì?"></textarea>
-                            <button type="submit">Gửi thông điệp</button>
-                        </form>
-                    </div>
-                    <div class="contact-illustration">
-                        <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&q=80&w=500" alt="Contact Us">
-                        <div class="socials">
-                            <a href="#"><i class="fab fa-github"></i></a>
-                            <a href="#"><i class="fab fa-linkedin"></i></a>
-                            <a href="#"><i class="fas fa-envelope"></i></a>
-                        </div>
-                    </div>
+                    <form class="contact-form-box">
+                        <input type="text" placeholder="Tên của bạn">
+                        <textarea rows="4" placeholder="Nội dung..."></textarea>
+                        <button type="submit">Gửi</button>
+                    </form>
                 </div>
             </div>
         </section>
     </main>
+
+    <script>
+        function showPage(pageId) {
+            // 1. Tìm tất cả các section
+            const sections = document.querySelectorAll('.section-full');
+            
+            // 2. Ẩn toàn bộ các section
+            sections.forEach(sec => {
+                sec.style.display = 'none';
+            });
+
+            // 3. Chỉ hiển thị section được chọn
+            const targetPage = document.getElementById(pageId);
+            targetPage.style.display = 'flex';
+            
+            // 4. Cuộn lên đầu trang cho đẹp
+            window.scrollTo(0, 0);
+        }
+    </script>
 
     <footer>
         <p>© 2026 Nguyễn Thanh Nam | Developed with Passion and Tech Spirit.</p>
