@@ -3,20 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nguyễn Thanh Nam - Personal Website</title>
-    
-    <!-- Dòng liên kết file CSS bên dưới là quan trọng nhất để có màu sắc -->
+    <title>Nguyễn Thanh Nam | Portfolio 2026</title>
+    <!-- Liên kết file CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- HEADER: Menu điều hướng -->
+    <!-- MENU ĐIỀU HƯỚNG -->
     <header>
+        <div class="logo"><strong>NAM.DEV</strong></div>
         <nav>
-            <div class="logo"><strong>NGUYỄN THANH NAM</strong></div>
             <ul>
                 <li><a href="#home">Home</a></li>
-                <li><a href="#about">About Me</a></li>
+                <li><a href="#about">About</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
@@ -24,85 +23,69 @@
     </header>
 
     <main>
-        <!-- PHẦN 1: HOME -->
+        <!-- TRANG CHỦ -->
         <section id="home">
             <div class="hero-content">
-                <h1>Chào mừng bạn đến với Website của tôi</h1>
-                <p>Tôi là Nguyễn Thanh Nam, sinh viên CNTT đam mê sáng tạo các giải pháp công nghệ.</p>
-                <!-- Thay link ảnh thật của Nam vào đây -->
-                <img src="https://via.placeholder.com/250" alt="Hình ảnh cá nhân Nguyễn Thanh Nam">
+                <!-- Chỗ này CSS sẽ làm ảnh co giãn mượt mà -->
+                <img src="https://via.placeholder.com/300" alt="Nguyễn Thanh Nam">
+                <h1>Nguyễn Thanh Nam</h1>
+                <p>Sinh viên CNTT | Web Developer Trainee</p>
             </div>
         </section>
 
-        <!-- PHẦN 2: ABOUT ME -->
+        <!-- GIỚI THIỆU -->
         <section id="about">
-            <h2>Giới thiệu bản thân</h2>
+            <h2>About Me</h2>
             <div class="about-grid">
                 <div class="about-item">
-                    <h3>Thông tin chung</h3>
-                    <p>Họ tên: Nguyễn Thanh Nam</p>
-                    <p>Chuyên ngành: Công nghệ thông tin</p>
-                    <p>Định hướng: Full-stack Developer.</p>
+                    <h3>Học vấn</h3>
+                    <p>Đang theo học ngành Công nghệ thông tin.</p>
+                    <p>Định hướng phát triển Full-stack Developer.</p>
                 </div>
-                
                 <div class="about-item">
                     <h3>Sở thích</h3>
-                    <ul>
-                        <li>Nghiên cứu công nghệ</li>
-                        <li>Thiết kế UI/UX</li>
-                    </ul>
+                    <p>Đam mê code, thiết kế UI/UX trên Canva/Figma và tìm hiểu về AI mới nhất 2026.</p>
                 </div>
-
                 <div class="about-item">
                     <h3>Kỹ năng</h3>
-                    <ul>
-                        <li>HTML, CSS, JS</li>
-                        <li>Git, Figma</li>
-                    </ul>
+                    <p>HTML5, CSS3, JS, Git, GitHub.</p>
                 </div>
             </div>
         </section>
 
-        <!-- PHẦN 3: PROJECTS -->
+        <!-- DỰ ÁN -->
         <section id="projects">
-            <h2>Các dự án cá nhân</h2>
+            <h2>My Projects</h2>
             <div class="project-list">
                 <article>
-                    <h3>1. Website Portfolio</h3>
-                    <p>Mô tả: Giới thiệu bản thân và kỹ năng.</p>
-                    <p>Công nghệ: HTML5, CSS3.</p>
+                    <h3>Website Cá Nhân</h3>
+                    <p>Sử dụng HTML/CSS để tạo Portfolio giới thiệu bản thân.</p>
                 </article>
-
                 <article>
-                    <h3>2. App Quản lý Học tập</h3>
-                    <p>Mô tả: Quản lý thời gian và bài tập sinh viên.</p>
-                    <p>Công nghệ: Javascript.</p>
+                    <h3>Quản lý học tập</h3>
+                    <p>Ứng dụng nhỏ giúp theo dõi lịch học và ghi chú.</p>
+                </article>
+                <article>
+                    <h3>Giao diện Landing Page</h3>
+                    <p>Thiết kế giao diện hiện đại, responsive trên mobile.</p>
                 </article>
             </div>
         </section>
 
-        <!-- PHẦN 4: CONTACT -->
+        <!-- LIÊN HỆ -->
         <section id="contact">
-            <h2>Thông tin liên hệ</h2>
-            <div class="contact-container">
-                <div class="contact-info">
-                    <p>📧 Email: nam.nguyen@example.com</p>
-                    <p>📞 SĐT: 0123 456 789</p>
-                </div>
-
-                <h3>Gửi lời nhắn</h3>
-                <form>
-                    <input type="text" name="name" placeholder="Họ và tên" required>
-                    <input type="email" name="email" placeholder="Email của bạn" required>
-                    <textarea name="message" rows="4" placeholder="Lời nhắn của bạn..."></textarea>
-                    <button type="submit">Gửi liên hệ</button>
-                </form>
-            </div>
+            <h2>Contact</h2>
+            <form>
+                <input type="text" placeholder="Tên của bạn" required>
+                <input type="email" placeholder="Email liên hệ" required>
+                <textarea rows="5" placeholder="Bạn muốn nhắn gì cho Nam?"></textarea>
+                <button type="submit">Gửi Tin Nhắn</button>
+            </form>
         </section>
     </main>
 
     <footer>
-        <p>© 2026 Nguyễn Thanh Nam. All rights reserved.</p>
+        <p>© 2026 Nguyễn Thanh Nam - Được xây dựng bằng niềm đam mê code.</p>
     </footer>
 
 </body>
