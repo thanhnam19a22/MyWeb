@@ -1,4 +1,5 @@
-m hay lam no gioi thieu ve nuyen thanh nam va lam giao dien nhu 🚀 NGUYỄN THANH NAM | PROFESSIONAL PORTFOLIO 2026
+
+ 🚀 NGUYỄN THANH NAM | PROFESSIONAL PORTFOLIO 2026
 🎯 1. TỔNG QUAN DỰ ÁN
 Website cá nhân của Nguyễn Thanh Nam là một không gian số chuyên nghiệp, được thiết kế nhằm khẳng định thương hiệu cá nhân, trình bày lộ trình phát triển và minh chứng năng lực thực tế trong lĩnh vực Công nghệ Thông tin.
 
